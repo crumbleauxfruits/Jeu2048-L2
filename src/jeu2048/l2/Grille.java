@@ -38,18 +38,6 @@ public class Grille implements Parametres {
         return result;
     }
     
-    public String toHTML() {
-        int[][] tableau = new int[TAILLE][TAILLE];
-        for (Case c : this.grille) {
-            tableau[c.getY()][c.getX()] = c.getValeur();
-        }
-        String result = "<html>";
-        for (int i = 0; i < tableau.length; i++) {
-            result += Arrays.toString(tableau[i]) + "<br/>";
-        }
-        result += "</html>";
-        return result;
-    }
 
     public HashSet<Case> getGrille() {
         return grille;
@@ -98,7 +86,7 @@ public class Grille implements Parametres {
         return deplacement;
     }
 
-    private void fusion(Case c) {
+    private void fusion(Case c) {////////////
         c.setValeur(c.getValeur() * 2);
         if (this.valeurMax < c.getValeur()) {
             this.valeurMax = c.getValeur();

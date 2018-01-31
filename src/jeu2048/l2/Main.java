@@ -63,18 +63,6 @@ public class Main implements Parametres {
             }
         }
         g.gameOver();
-        /*
-        // Bout de code pour tester manuellement si une grille contient une case ou pas
-        Scanner sc = new Scanner(System.in);
-        System.out.println("x :");
-        int x = sc.nextInt();
-        System.out.println("y :");
-        int y = sc.nextInt();
-        Case c = new Case(x, y, 2);
-        Case c2 = new Case(x, y, 4);
-        System.out.println("test1=" + g.getGrille().contains(c));
-        System.out.println("test2=" + g.getGrille().contains(c2));
-         */
     }
 
 }
